@@ -1,0 +1,17 @@
+The requirement is a simple web application.
+
+It provides user management with basic information (Name, email and password). Add, edit, delete functionality.
+
+When a user login to the website, it is taken to main page which shows a table with list of user’s previously generated pdfs. The row will contain the link to the document, a title and a short description. At first, the table will be empty.
+
+User will be offered with ‘Create pdf’ operation using which user will land to second page “Generation Form”.
+
+The “Generation Form” page provides a hello message with a form that offers dynamic items with only text fields/area and their labels. After entering values, user can submit the form which is collected by the server and a pdf is created with some extra business logic. Open source library PDFBox can be used for this and some help can be provided as well.
+
+User is then offered the response page which shows the generated pdf and provide an option to save with a short description. Upon saving, user is taken back to home page with the table containing also the newly created pdf as one of its rows.
+
+The modern look and feel is important along with all the functionalities described.
+
+MySQL database is preferred.
+
+Any technology that can work with Java (to support PDFBox library integration) can be considered but Grails is preferred.
