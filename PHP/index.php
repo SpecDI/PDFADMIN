@@ -25,10 +25,18 @@
                 <div class="form-group">
                     <label>Username</label>
                     <input type="text" name="login_username" id="login_username" class="form-control" placeholder="Username">
+                    <div class="alert alert-danger alert-dismissable" id="login_alertUsername">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Error!</strong> Username not found.
+                    </div>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
                     <input type="password" name="login_password" id="login_password" class="form-control" placeholder="Password">
+                    <div class="alert alert-danger alert-dismissable" id="login_alertPassword">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Error!</strong> Incorrect password
+                    </div>
                 </div>
                 <div class="form-group text-center">
                     <button type="button" class="btn btn-primary btn-lg" id="login_btn">Log In</button>
@@ -40,10 +48,18 @@
         </div>
         <div id="signup_div">
             <h1>Sign Up</h1>
+            <div class="alert alert-success alert-dismissable" id="signup_alertSignUpSuccess">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Success!</strong> Your account has been created
+            </div>
             <form id="signup_form">
                 <div class="form-group">
                     <label>Username</label>
                     <input type="text" name="signup_username" id="signup_username" class="form-control">
+                    <div class="alert alert-danger alert-dismissable" id="signup_alertUsername">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Error!</strong> The username is already in use..
+                    </div>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
@@ -52,6 +68,10 @@
                 <div class="form-group">
                     <label>Re-Type Password</label>
                     <input type="password" name="signup_rePassword" id="signup_rePassword" class="form-control">
+                    <div class="alert alert-warning alert-dismissable" id="signup_alertPassword">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Warning!</strong> The two passwords don't match.'
+                    </div>
                 </div>
                 <div class="form-group">
                     <label>E-mail</label>
