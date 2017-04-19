@@ -24,7 +24,7 @@
             <form id="loginForm">
                 <div class="form-group">
                     <label>Username</label>
-                    <input type="text" name="login_username" id="login_username" class="form-control" placeholder="Username">
+                    <input type="text" name="login_username" id="login_username" class="form-control" placeholder="Username" require>
                     <div class="alert alert-danger alert-dismissable" id="login_alertUsername">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <strong>Error!</strong> Username not found.
@@ -32,7 +32,7 @@
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="password" name="login_password" id="login_password" class="form-control" placeholder="Password">
+                    <input type="password" name="login_password" id="login_password" class="form-control" placeholder="Password" require>
                     <div class="alert alert-danger alert-dismissable" id="login_alertPassword">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <strong>Error!</strong> Incorrect password
@@ -55,7 +55,7 @@
             <form id="signup_form">
                 <div class="form-group">
                     <label>Username</label>
-                    <input type="text" name="signup_username" id="signup_username" class="form-control">
+                    <input type="text" name="signup_username" id="signup_username" class="form-control" require>
                     <div class="alert alert-danger alert-dismissable" id="signup_alertUsername">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <strong>Error!</strong> The username is already in use..
@@ -63,11 +63,11 @@
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="password" name="signup_password" id="signup_password" class="form-control">
+                    <input type="password" name="signup_password" id="signup_password" class="form-control" require>
                 </div>
                 <div class="form-group">
                     <label>Re-Type Password</label>
-                    <input type="password" name="signup_rePassword" id="signup_rePassword" class="form-control">
+                    <input type="password" name="signup_rePassword" id="signup_rePassword" class="form-control" require>
                     <div class="alert alert-warning alert-dismissable" id="signup_alertPassword">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                         <strong>Warning!</strong> The two passwords don't match.'
@@ -75,7 +75,7 @@
                 </div>
                 <div class="form-group">
                     <label>E-mail</label>
-                    <input type="email" name="signup_email" id="signup_email" class="form-control">
+                    <input type="email" name="signup_email" id="signup_email" class="form-control" require>
                 </div>
                 <div class="form-group text-center">
                     <button type="button" id="signup_btn" class="btn btn-success btn-lg">Sign Up</button>

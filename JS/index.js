@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     //if the user clicks on a close button from the alert boxes then close the alert
     $('.close').click(function() {
-        $(this).parent().hide();
+        $(this).parent().hide(400);
     });
 });
 
@@ -34,6 +34,10 @@ function createAccount() {
     var pas = $('#signup_password').val();
     var re = $('#signup_rePassword').val();
     if (pas != re) {
-        $('#signup_alertPassword').show();
+        $('#signup_alertPassword').show(400);
+    } else {
+        //verify if the user is trying touse an already existing username
+        //get an array of all the users from the database and then verify the usernames
+
     }
 }
