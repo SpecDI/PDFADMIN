@@ -5,4 +5,5 @@
     require "User.php";
     //create a query to select all the users from the database
     
+    
 ?>
